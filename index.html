@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang=ru>
+  <head>
+  <meta charset=utf-8>
+  <title>Припять</title>
+  <style>
+    body {
+  	  margin: 0;
+  	  font-size: 1em;
+  	  color: #e0c090;
+  	  background: url('pripyat_fon.jpg');
+  	  //background-size: 100%;
+    }
+    A:link { text-decoration: none; color: #805030; font-weight: 900; }
+    A:visited { text-decoration: none; color: #805030; font-weight: 900; }
+    A:active { text-decoration: none; color: #805030; font-weight: 900; }
+    A:hover { text-decoration: underline; color: #c00000; font-weight: 900; }
+     .bm, .bc, .bt {
+       width: 330px;
+       height: 40px;
+       border-width: 1px;
+       border-radius: 30px;
+       border-style: solid;
+       border-color: #805030;
+       font-size: 32px;
+       color: #805030;
+       font-weight: 600;
+       background-color: #dfdfdf;
+     }
+     .sp1 {
+     	height: 15px;
+     }
+     .sp2 {
+     	letter-spacing: 50px;
+     }
+   </style>
+   <script type="module">
+     var ndb = 2;                // отображение 1=imgbb; 2=comss;
+     var tbl = "blag";           // текущий отображаемый блок
+     serv1.innerText = tbl;
+     clzs();
+     zbzs.onclick = function() { clzs(); }     // смена сайта источника фото
+     zbag.onclick = function() { ndb==1 ? allnone('ag') : allnone('agc') }
+     zbdz.onclick = function() { ndb==1 ? allnone('dz') : allnone('dzc') }
+     zbkk.onclick = function() { ndb==1 ? allnone('kk') : allnone('kkc') }
+     zbln.onclick = function() { ndb==1 ? allnone('ln') : allnone('lnc') }
+     zboo.onclick = function() { ndb==1 ? allnone('oo') : allnone('ooc') }
+     zbpp.onclick = function() { ndb==1 ? allnone('pp') : allnone('ppc') }
+     zbrs.onclick = function() { ndb==1 ? allnone('rs') : allnone('rsc') }
+     zbty.onclick = function() { ndb==1 ? allnone('ty') : allnone('tyc') }
+     zbds.onclick = function() { ndb==1 ? allnone('ds') : allnone('dsc') }
+     zbuz.onclick = function() { ndb==1 ? allnone('uz') : allnone('uzc') }
+     zbug.onclick = function() { ndb==1 ? allnone('ug') : allnone('ugc') }
+     zbul.onclick = function() { ndb==1 ? allnone('ul') : allnone('ulc') }
+     zbun.onclick = function() { ndb==1 ? allnone('un') : allnone('unc') }
+     
+     function clzs() {
+       ndb+=1;
+       if(ndb> 2) { ndb=1; }
+       tbl.length==2 ? tbl+="c" : tbl=tbl.substr(0,2)
+       allnone(tbl);
+       if(ndb==1) { ssours.innerText = "imgbb"; }
+       if(ndb==2) { ssours.innerText = "comss"; }
+     }
+     function allnone(sp1) {
+       blag.style.display='none'; blagc.style.display='none';
+       bldz.style.display='none'; bldzc.style.display='none';
+       blkk.style.display='none'; blkkc.style.display='none';
+       blln.style.display='none'; bllnc.style.display='none';
+       bloo.style.display='none'; blooc.style.display='none';
+       blpp.style.display='none'; blppc.style.display='none';
+       blrs.style.display='none'; blrsc.style.display='none';
+       blty.style.display='none'; bltyc.style.display='none';
+       blds.style.display='none'; bldsc.style.display='none';
+       bluz.style.display='none'; bluzc.style.display='none';
+       blug.style.display='none'; blugc.style.display='none';
+       blul.style.display='none'; blulc.style.display='none';
+       blun.style.display='none'; blunc.style.display='none';
+       tbl = sp1;
+       eval("bl"+sp1+".style.display='block'");
+     }
+   </script>
+  </head>
+  <body>
+    <center id='zbzs' style="font-size: 3em;"><b>Коллекция фотографий города Припять</b></center>
+    <center><span id='ssours' style="fonf-size: 0.5em;">sours</span></center><br>
+    <div id='zbag' class="bt"><center>По алфавиту<i class="sp2"> </i>А-Г</center></div> <div class="sp1"> </div>
+    <div id='zbdz' class="bt"><center>По алфавиту<i class="sp2"> </i>Д-З</center></div> <div class="sp1"> </div>
+    <div id='zbkk' class="bt"><center>По алфавиту<i class="sp2"> </i>К-К</center></div> <div class="sp1"> </div>
+    <div id='zbln' class="bt"><center>По алфавиту<i class="sp2"> </i>Л-Н</center></div> <div class="sp1"> </div>
+    <div id='zboo' class="bt"><center>По алфавиту<i class="sp2"> </i>О-О</center></div> <div class="sp1"> </div>
+    <div id='zbpp' class="bt"><center>По алфавиту<i class="sp2"> </i>П-П</center></div> <div class="sp1"> </div>
+    <div id='zbrs' class="bt"><center>По алфавиту<i class="sp2"> </i>Р-С</center></div> <div class="sp1"> </div>
+    <div id='zbty' class="bt"><center>По алфавиту<i class="sp2"> </i>Т-Я</center></div> <div class="sp1"> </div>
+    <div id='zbds' class="bt"><center>Детские сады</center></div> <div class="sp1"> </div>
+    <div id='zbuz' class="bt"><center>Учебные заведения</center></div> <div class="sp1"> </div>
+    <div id='zbug' class="bt"><center>Улицы Г-К</center></div> <div class="sp1"> </div>
+    <div id='zbul' class="bt"><center>Улицы Л-Л</center></div> <div class="sp1"> </div>
+    <div id='zbun' class="bt"><center>Улицы Н-Э</center></div> <div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__тест__#__pripyat1/alltest target=_blank>&nbsp; Тест доступности &nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__инструкция__#__pripyat1/x1instr target=_blank>&nbsp; Управление слайдшоу &nbsp;</a><div class="sp1"> </div>
+    <div id="blag" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__Авангард__#__pripyat1/avangard target=_blank>&nbsp;&nbsp;"Авангард"_(спортивный_комплекс)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__автовокзал__#__pripyat1/avtovokzal target=_blank>&nbsp;&nbsp;Автобусная_станция_"Припять"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__автодром__#__pripyat1/avtodrom target=_blank>&nbsp;&nbsp;"Автодром"_(аттракцион_в_парке)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__АТХ2__#__pripyat1/ath2 target=_blank>&nbsp;&nbsp;Авто_транспортное_хозяйство_№2&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__база_ОРС__#__pripyat1/baza_ors target=_blank>&nbsp;&nbsp;База_ОРС_(отдела_рабочего_снабжения)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__баня__#__pripyat1/banya target=_blank>&nbsp;&nbsp;Банно_прачечный_комбинат_№6&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Березка__#__pripyat1/berezka target=_blank>&nbsp;&nbsp;"Березка"_(магазин_№9)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Восход__#__pripyat1/voshod target=_blank>&nbsp;&nbsp;"Восход"_(магазин_№2)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Встреча__#__pripyat1/vstrecha target=_blank>&nbsp;&nbsp;"Встреча"_(столовая_№4)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__гараж_милиции__#__pripyat1/garazh_milicii target=_blank>&nbsp;&nbsp;Гараж милиции&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__гастроном__#__pripyat1/gastronom target=_blank>&nbsp;&nbsp;"Гастроном"_(магазин_№14)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__горком__#__pripyat1/gorkom target=_blank>&nbsp;&nbsp;Горком_КПСС,_горисполком&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ГПТУ8__#__pripyat1/gptu8 target=_blank>&nbsp;&nbsp;ГПТУ_№8&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blagc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__Авангард__#__pripyat0/avangard target=_blank>&nbsp;&nbsp;"Авангард"_(спортивный_комплекс)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__автовокзал__#__pripyat0/avtovokzal target=_blank>&nbsp;&nbsp;Автобусная_станция_"Припять"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__автодром__#__pripyat0/avtodrom target=_blank>&nbsp;&nbsp;"Автодром"_(аттракцион_в_парке)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__АТХ2__#__pripyat0/ath2 target=_blank>&nbsp;&nbsp;Авто_транспортное_хозяйство_№2&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__база_орс__#__pripyat0/baza_ors target=_blank>&nbsp;&nbsp;База_ОРС_(отдела_рабочего_снабжения)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__баня__#__pripyat0/banya target=_blank>&nbsp;&nbsp;Банно_прачечный_комбинат_№6&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Березка__#__pripyat0/berezka target=_blank>&nbsp;&nbsp;"Березка"_(магазин_№9)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Восход__#__pripyat0/voshod target=_blank>&nbsp;&nbsp;"Восход"_(магазин_№2)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Встреча__#__pripyat0/vstrecha target=_blank>&nbsp;&nbsp;"Встреча"_(столовая_№4)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__гараж_милиции__#__pripyat0/garazh_milicii target=_blank>&nbsp;&nbsp;Гараж милиции&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__гастроном__#__pripyat0/gastronom target=_blank>&nbsp;&nbsp;"Гастроном"_(магазин_№14)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__горком__#__pripyat0/gorkom target=_blank>&nbsp;&nbsp;Горком_КПСС,_горисполком&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ГПТУ8__#__pripyat0/gptu8 target=_blank>&nbsp;&nbsp;ГПТУ_№8&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="bldz" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__дворец_пионеров__#__pripyat1/dvorec_pionerov target=_blank>&nbsp;&nbsp;Дворец_пионеров&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__дебаркадер__#__pripyat1/debarkader target=_blank>&nbsp;&nbsp;Дебаркадер&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Дерево_дружбы__#__pripyat1/derevo_druzhby target=_blank>&nbsp;&nbsp;Дерево_дружбы_народов (композиция)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детская_поликлиника__#__pripyat1/detskaya_poliklinika target=_blank>&nbsp;&nbsp;Детская_поликлиника&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детские_площадки__#__pripyat1/detskie_ploschadki target=_blank>&nbsp;&nbsp;Детские_площадки&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__дом_допризывников__#__pripyat1/dom_doprizyvnikov target=_blank>&nbsp;&nbsp;Дом_допризывников&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Дружба__#__pripyat1/druzhba target=_blank>&nbsp;&nbsp;"Дружба"_(столовая_№5)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__забор__#__pripyat1/zabor target=_blank>&nbsp;&nbsp;Заборы_и_ограждения&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="bldzc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__дворец_пионеров__#__pripyat0/dvorec_pionerov target=_blank>&nbsp;&nbsp;Дворец_пионеров&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__дебаркадер__#__pripyat0/debarkader target=_blank>&nbsp;&nbsp;Дебаркадер&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Дерево_дружбы__#__pripyat0/derevo_druzhby target=_blank>&nbsp;&nbsp;Дерево_дружбы_народов (композиция)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детская_поликлиника__#__pripyat0/detskaya_poliklinika target=_blank>&nbsp;&nbsp;Детская_поликлиника&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детские_площадки__#__pripyat0/detskie_ploschadki target=_blank>&nbsp;&nbsp;Детские_площадки&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__дом_допризывников__#__pripyat0/dom_doprizyvnikov target=_blank>&nbsp;&nbsp;Дом_допризывников&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Дружба__#__pripyat0/druzhba target=_blank>&nbsp;&nbsp;"Дружба"_(столовая_№5)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__забор__#__pripyat0/zabor target=_blank>&nbsp;&nbsp;Заборы_и_ограждения&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blds" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__детсад_Василек__#__pripyat1/detsad_vasilek target=_blank>&nbsp;&nbsp;Детский_сад_№12_"Василёк"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Дружба__#__pripyat1/detsad_druzhba target=_blank>&nbsp;&nbsp;Детский_сад_№6_"Дружба"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Звездочка__#__pripyat1/detsad_zvezdochka target=_blank>&nbsp;&nbsp;Детский_сад_№9_"Звездочка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Золотая_рыбка__#__pripyat1/detsad_zolotaya_rybka target=_blank>&nbsp;&nbsp;Детский_сад_№13_"Золотая рыбка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Золотой_ключик__#__pripyat1/detsad_zolotoj_kljuchik target=_blank>&nbsp;&nbsp;Детский_сад_№7_"Золотой_ключик"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Золотой_петушок__#__pripyat1/detsad_zolotoj_petushok target=_blank>&nbsp;&nbsp;Детский_сад_№4_"Золотой_петушок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Ивушка__#__pripyat1/detsad_ivushka target=_blank>&nbsp;&nbsp;Детский_сад_№2_"Ивушка"&nbsp;&nbsp;</a>&<div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Малыш__#__pripyat1/detsad_malysh target=_blank>&nbsp;&nbsp;Детский_сад_№14_"Малыш"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Медвежонок__#__pripyat1/detsad_medvezhonok target=_blank>&nbsp;&nbsp;Детский_сад_№5_"Медвежонок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Радость__#__pripyat1/detsad_radost target=_blank>&nbsp;&nbsp;Детский_сад_№16_"Радость"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Сказка__#__pripyat1/detsad_skazka target=_blank>&nbsp;&nbsp;Детский_сад_№11_"Сказка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Солнышко__#__pripyat1/detsad_solnyshko target=_blank>&nbsp;&nbsp;Детский_сад_№3_"Солнышко"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Теремок__#__pripyat1/detsad_teremok target=_blank>&nbsp;&nbsp;Детский_сад_№8_"Теремок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Чебурашка__#__pripyat1/detsad_cheburashka target=_blank>&nbsp;&nbsp;Детский_сад_№10_"Чебурашка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Яблонька__#__pripyat1/detsad_yablonka target=_blank>&nbsp;&nbsp;Детский_сад_№15_"Яблонька"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="bldsc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__детсад_Василек__#__pripyat0/detsad_vasilek target=_blank>&nbsp;&nbsp;Детский_сад_№12_"Василёк"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Дружба__#__pripyat0/detsad_druzhba target=_blank>&nbsp;&nbsp;Детский_сад_№6_"Дружба"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Звездочка__#__pripyat0/detsad_zvezdochka target=_blank>&nbsp;&nbsp;Детский_сад_№9_"Звездочка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Золотая_рыбка__#__pripyat0/detsad_zolotaya_rybka target=_blank>&nbsp;&nbsp;Детский_сад_№13_"Золотая рыбка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Золотой_ключик__#__pripyat0/detsad_zolotoj_kljuchik target=_blank>&nbsp;&nbsp;Детский_сад_№7_"Золотой_ключик"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Золотой_петушок__#__pripyat0/detsad_zolotoj_petushok target=_blank>&nbsp;&nbsp;Детский_сад_№4_"Золотой_петушок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Ивушка__#__pripyat0/detsad_ivushka target=_blank>&nbsp;&nbsp;Детский_сад_№2_"Ивушка"&nbsp;&nbsp;</a>&<div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Малыш__#__pripyat0/detsad_malysh target=_blank>&nbsp;&nbsp;Детский_сад_№14_"Малыш"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Медвежонок__#__pripyat0/detsad_medvezhonok target=_blank>&nbsp;&nbsp;Детский_сад_№5_"Медвежонок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Радость__#__pripyat0/detsad_radost target=_blank>&nbsp;&nbsp;Детский_сад_№16_"Радость"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Сказка__#__pripyat0/detsad_skazka target=_blank>&nbsp;&nbsp;Детский_сад_№11_"Сказка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Солнышко__#__pripyat0/detsad_solnyshko target=_blank>&nbsp;&nbsp;Детский_сад_№3_"Солнышко"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Теремок__#__pripyat0/detsad_teremok target=_blank>&nbsp;&nbsp;Детский_сад_№8_"Теремок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Чебурашка__#__pripyat0/detsad_cheburashka target=_blank>&nbsp;&nbsp;Детский_сад_№10_"Чебурашка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__детсад_Яблонька__#__pripyat0/detsad_yablonka target=_blank>&nbsp;&nbsp;Детский_сад_№15_"Яблонька"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blkk" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__карусели__#__pripyat1/karuseli target=_blank>&nbsp;&nbsp;Карусели_в_парке&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__кафе_пирожковая__#__pripyat1/kafe_pirozhkovaya target=_blank>&nbsp;&nbsp;Кафе_пирожковая&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__качели__#__pripyat1/kacheli target=_blank>&nbsp;&nbsp;Качели_в_парке&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__КБО__#__pripyat1/kbo target=_blank>&nbsp;&nbsp;КБО_(старый)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__КГБ__#__pripyat1/kgb target=_blank>&nbsp;&nbsp;КГБ_(недостроенное)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__киоск__#__pripyat1/kiosk target=_blank>&nbsp;&nbsp;Киоски_на_улицах&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Книги__#__pripyat1/knigi target=_blank>&nbsp;&nbsp;Книжный_магазин&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__книжный_павильон__#__pripyat1/knizhnyj_pavilon target=_blank>&nbsp;&nbsp;Книжный_павильон&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__колесо__#__pripyat1/koleso target=_blank>&nbsp;&nbsp;Колесо_обозрения&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__колонада__#__pripyat1/kolonada target=_blank>&nbsp;&nbsp;Колоннада_на_площади&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Колосок__#__pripyat1/kolosok target=_blank>&nbsp;&nbsp;Магазин_№6_"Колосок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Кулинария__#__pripyat1/kulinariya target=_blank>&nbsp;&nbsp;Магазин_"Кулинария"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Культтовары__#__pripyat1/kulttovary target=_blank>&nbsp;&nbsp;Магазин_"Культтовары"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blkkc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__карусели__#__pripyat0/karuseli target=_blank>&nbsp;&nbsp;Карусели_в_парке&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__кафе_пирожковая__#__pripyat0/kafe_pirozhkovaya target=_blank>&nbsp;&nbsp;Кафе_пирожковая&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__качели__#__pripyat0/kacheli target=_blank>&nbsp;&nbsp;Качели_в_парке&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__КБО__#__pripyat0/kbo target=_blank>&nbsp;&nbsp;КБО_(старый)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__КГБ__#__pripyat0/kgb target=_blank>&nbsp;&nbsp;КГБ_(недостроенное)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__киоск__#__pripyat0/kiosk target=_blank>&nbsp;&nbsp;Киоски_на_улицах&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Книги__#__pripyat0/knigi target=_blank>&nbsp;&nbsp;Книжный_магазин&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__книжный_павильон__#__pripyat0/knizhnyj_pavilon target=_blank>&nbsp;&nbsp;Книжный_павильон&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__колесо__#__pripyat0/koleso target=_blank>&nbsp;&nbsp;Колесо_обозрения&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__колонада__#__pripyat0/kolonada target=_blank>&nbsp;&nbsp;Колоннада_на_площади&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Колосок__#__pripyat0/kolosok target=_blank>&nbsp;&nbsp;Магазин_№6_"Колосок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Кулинария__#__pripyat0/kulinariya target=_blank>&nbsp;&nbsp;Магазин_"Кулинария"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Культтовары__#__pripyat0/kulttovary target=_blank>&nbsp;&nbsp;Магазин_"Культтовары"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blln" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__Лазурный__#__pripyat1/lazurnyj target=_blank>&nbsp;&nbsp;Бассейн_"Лазурный"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Ласточка__#__pripyat1/lastochka target=_blank>&nbsp;&nbsp;Гостиница_"Ласточка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__мастерские_жкх__#__pripyat1/masterskie_zhkh target=_blank>&nbsp;&nbsp;Мастерские_ЖКХ&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Мебель__#__pripyat1/mebel target=_blank>&nbsp;&nbsp;Магазин_№26_"Мебель"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__милиция__#__pripyat1/miliciya target=_blank>&nbsp;&nbsp;Милиция&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Молодость__#__pripyat1/molodost target=_blank>&nbsp;&nbsp;Магазин_№12_"Молодость"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__МСЧ-126__#__pripyat1/msch-126 target=_blank>&nbsp;&nbsp;МСЧ_№126&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__музшкола__#__pripyat1/muzshkola target=_blank>&nbsp;&nbsp;Музыкальная_школа&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Мясо_рыба_овощи__#__pripyat1/myaso_ryba_ovoschi target=_blank>&nbsp;&nbsp;Магазин_"Мясо_рыба_овощи"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__новый_гастроном__#__pripyat1/novyj_gastronom target=_blank>&nbsp;&nbsp;Магазин_"Новый_гастроном"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="bllnc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__Лазурный__#__pripyat0/lazurnyj target=_blank>&nbsp;&nbsp;Бассейн_"Лазурный"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Ласточка__#__pripyat0/lastochka target=_blank>&nbsp;&nbsp;Гостиница_"Ласточка"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__мастерские_жкх__#__pripyat0/masterskie_zhkh target=_blank>&nbsp;&nbsp;Мастерские_ЖКХ&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Мебель__#__pripyat0/mebel target=_blank>&nbsp;&nbsp;Магазин_№26_"Мебель"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__милиция__#__pripyat0/miliciya target=_blank>&nbsp;&nbsp;Милиция&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Молодость__#__pripyat0/molodost target=_blank>&nbsp;&nbsp;Магазин_№12_"Молодость"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__МСЧ-126__#__pripyat0/msch-126 target=_blank>&nbsp;&nbsp;МСЧ_№126&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__музшкола__#__pripyat0/muzshkola target=_blank>&nbsp;&nbsp;Музыкальная_школа&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Мясо_рыба_овощи__#__pripyat0/myaso_ryba_ovoschi target=_blank>&nbsp;&nbsp;Магазин_"Мясо_рыба_овощи"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__новый_гастроном__#__pripyat0/novyj_gastronom target=_blank>&nbsp;&nbsp;Магазин_"Новый_гастроном"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="bloo" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__общежития_1_2_3_4__#__pripyat1/obschezhitiya_1_2_3_4 target=_blank>&nbsp;&nbsp;Общежития_№1,_№2,_№3,_№4&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__общежития_5_6_7_8_10__#__pripyat1/obschezhitiya_5_6_7_8_10 target=_blank>&nbsp;&nbsp;Общежития_№5,_№6,_№7,_№8,_№10&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__общежития_15_21_юпитер__#__pripyat1/obschezhitiya_15_21_jupiter target=_blank>&nbsp;&nbsp;Общежития_№15_-_№21,_з._"Юпитер"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Овощи__#__pripyat1/ovoschi target=_blank>&nbsp;&nbsp;Магазин_"Овощи"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Олимпия__#__pripyat1/olimpiya target=_blank>&nbsp;&nbsp;Кафе_"Олимпия"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blooc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__общежития_1_2_3_4__#__pripyat0/obschezhitiya_1_2_3_4 target=_blank>&nbsp;&nbsp;Общежития_№1,_№2,_№3,_№4&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__общежития_5_6_7_8_10__#__pripyat0/obschezhitiya_5_6_7_8_10 target=_blank>&nbsp;&nbsp;Общежития_№5,_№6,_№7,_№8,_№10&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__общежития_15_21_юпитер__#__pripyat0/obschezhitiya_15_21_jupiter target=_blank>&nbsp;&nbsp;Общежития_№15_-_№21,_з._"Юпитер"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Овощи__#__pripyat0/ovoschi target=_blank>&nbsp;&nbsp;Магазин_"Овощи"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Олимпия__#__pripyat0/olimpiya target=_blank>&nbsp;&nbsp;Кафе_"Олимпия"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blpp" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__памятник_Прометей__#__pripyat1/pamyatnik_prometej target=_blank>&nbsp;&nbsp;Памятник_Прометею&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__парк__#__pripyat1/park target=_blank>&nbsp;&nbsp;Городской_парк&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__плакат__#__pripyat1/plakat target=_blank>&nbsp;&nbsp;Плакаты_на_аллее_в_парке&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__площадь__#__pripyat1/ploschad target=_blank>&nbsp;&nbsp;Центральная_площадь&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ПМК169__#__pripyat1/pmk169 target=_blank>&nbsp;&nbsp;ПМК-169&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__подъезд__#__pripyat1/podezd target=_blank>&nbsp;&nbsp;Подъезды_домов&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пожарная_часть__#__pripyat1/pozharka target=_blank>&nbsp;&nbsp;Пожарная_часть_СВПЧ-6&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Полесье__#__pripyat1/polese target=_blank>&nbsp;&nbsp;Гостиница_и_ресторан_"Полесье"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__почта__#__pripyat1/pochta target=_blank>&nbsp;&nbsp;Почтамт_и_телеграф&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__кафе_Припять__#__pripyat1/pri5 target=_blank>&nbsp;&nbsp;Кафе "Припять"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пристань__#__pripyat1/pristan target=_blank>&nbsp;&nbsp;Пристань&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Прометей__#__pripyat1/prometej target=_blank>&nbsp;&nbsp;Кинотеатр_"Прометей"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blppc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__памятник_Прометей__#__pripyat0/pamyatnik_prometej target=_blank>&nbsp;&nbsp;Памятник_Прометею&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__парк__#__pripyat0/park target=_blank>&nbsp;&nbsp;Городской_парк&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__плакат__#__pripyat0/plakat target=_blank>&nbsp;&nbsp;Плакаты_на_аллее_в_парке&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__площадь__#__pripyat0/ploschad target=_blank>&nbsp;&nbsp;Центральная_площадь&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ПМК169__#__pripyat0/pmk169 target=_blank>&nbsp;&nbsp;ПМК-169&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__подъезд__#__pripyat0/podezd target=_blank>&nbsp;&nbsp;Подъезды_домов&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пожарная_часть__#__pripyat0/pozharka target=_blank>&nbsp;&nbsp;Пожарная_часть_СВПЧ-6&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Полесье__#__pripyat0/polese target=_blank>&nbsp;&nbsp;Гостиница_и_ресторан_"Полесье"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__почта__#__pripyat0/pochta target=_blank>&nbsp;&nbsp;Почтамт_и_телеграф&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__кафе_Припять__#__pripyat0/pri5 target=_blank>&nbsp;&nbsp;Кафе "Припять"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пристань__#__pripyat0/pristan target=_blank>&nbsp;&nbsp;Пристань&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Прометей__#__pripyat0/prometej target=_blank>&nbsp;&nbsp;Кинотеатр_"Прометей"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blrs" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__Радиология__#__pripyat1/radiologiya target=_blank>&nbsp;&nbsp;"Радиология"_(бывший_ДОСААФ)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Радуга__#__pripyat1/raduga target=_blank>&nbsp;&nbsp;Магазин_"Радуга"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Рекорд__#__pripyat1/rekord target=_blank>&nbsp;&nbsp;Магазин_"Рекорд"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__рынок__#__pripyat1/rynok target=_blank>&nbsp;&nbsp;Городской_рынок&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__сберкасса__#__pripyat1/sberkassa target=_blank>&nbsp;&nbsp;Сберкасса_№3046-035&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__сверху__#__pripyat1/sverhu target=_blank>&nbsp;&nbsp;Вид_на_Припять_с_высоты&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Светлячок__#__pripyat1/svetlyachok target=_blank>&nbsp;&nbsp;Магазин_"Светлячок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Сельхозпродукты__#__pripyat1/selhozprodukty target=_blank>&nbsp;&nbsp;Магазин_"Сельхозпродукты"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Солнечный__#__pripyat1/solnechnyj target=_blank>&nbsp;&nbsp;Профилакторий_"Солнечный"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__стадион__#__pripyat1/stadion target=_blank>&nbsp;&nbsp;Центральный_стадион&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__станция_воды__#__pripyat1/stanciya_vody target=_blank>&nbsp;&nbsp;Станция_фторирования_воды&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Старт__#__pripyat1/start target=_blank>&nbsp;&nbsp;Магазин_"Старт"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__стелла__#__pripyat1/stella target=_blank>&nbsp;&nbsp;Стелла_"Припять"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Стоматология__#__pripyat1/stomatologiya target=_blank>&nbsp;&nbsp;Стоматологическая_поликлиника&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Струмок_молочный__#__pripyat1/strumok_molochnyj target=_blank>&nbsp;&nbsp;Магазин_"Струмок"_(молочный)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__СЭС__#__pripyat1/ses target=_blank>&nbsp;&nbsp;Санитарно-эпидемиологическая_станция&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blrsc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__Радиология__#__pripyat0/radiologiya target=_blank>&nbsp;&nbsp;"Радиология"_(бывший_ДОСААФ)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Радуга__#__pripyat0/raduga target=_blank>&nbsp;&nbsp;Магазин_"Радуга"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Рекорд__#__pripyat0/rekord target=_blank>&nbsp;&nbsp;Магазин_"Рекорд"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__рынок__#__pripyat0/rynok target=_blank>&nbsp;&nbsp;Городской_рынок&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__сберкасса__#__pripyat0/sberkassa target=_blank>&nbsp;&nbsp;Сберкасса_№3046-035&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__сверху__#__pripyat0/sverhu target=_blank>&nbsp;&nbsp;Вид_на_Припять_с_высоты&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Светлячок__#__pripyat0/svetlyachok target=_blank>&nbsp;&nbsp;Магазин_"Светлячок"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Сельхозпродукты__#__pripyat0/selhozprodukty target=_blank>&nbsp;&nbsp;Магазин_"Сельхозпродукты"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Солнечный__#__pripyat0/solnechnyj target=_blank>&nbsp;&nbsp;Профилакторий_"Солнечный"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__стадион__#__pripyat0/stadion target=_blank>&nbsp;&nbsp;Центральный_стадион&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__станция_воды__#__pripyat0/stanciya_vody target=_blank>&nbsp;&nbsp;Станция_фторирования_воды&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Старт__#__pripyat0/start target=_blank>&nbsp;&nbsp;Магазин_"Старт"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__стелла__#__pripyat0/stella target=_blank>&nbsp;&nbsp;Стелла_"Припять"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Стоматология__#__pripyat0/stomatologiya target=_blank>&nbsp;&nbsp;Стоматологическая_поликлиника&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Струмок_молочный__#__pripyat0/strumok_molochnyj target=_blank>&nbsp;&nbsp;Магазин_"Струмок"_(молочный)&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__СЭС__#__pripyat0/ses target=_blank>&nbsp;&nbsp;Санитарно-эпидемиологическая_станция&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blty" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__танцплощадка__#__pripyat1/tancploschadka target=_blank>&nbsp;&nbsp;Танцплощадка&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__телефоны__#__pripyat1/telefon target=_blank>&nbsp;&nbsp;Телефоны_автоматы&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Торговый_центр1__#__pripyat1/torgovyj_centr1 target=_blank>&nbsp;&nbsp;Торговый_центр_1&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Торговый_центр2__#__pripyat1/torgovyj_centr2 target=_blank>&nbsp;&nbsp;Торговый_центр_2&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Универмаг__#__pripyat1/univermag target=_blank>&nbsp;&nbsp;магазин_"Универмаг"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Фабрика_кухня__#__pripyat1/fabrika_kuhnya target=_blank>&nbsp;&nbsp;Фабрика_кухня&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Фекальная__#__pripyat1/feka target=_blank>&nbsp;&nbsp;Фекальная_станция&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__фигурки__#__pripyat1/figurka target=_blank>&nbsp;&nbsp;Фигурки&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__химчистка__#__pripyat1/himchistka target=_blank>&nbsp;&nbsp;Химчистка_прачечная&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Энергетик_1__#__pripyat1/energetik1 target=_blank>&nbsp;&nbsp;Дворец_культуры_"Энергетик"_1&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Энергетик_2__#__pripyat1/energetik2 target=_blank>&nbsp;&nbsp;Дворец_культуры_"Энергетик"_2&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Юбилейный__#__pripyat1/jubilejnyj target=_blank>&nbsp;&nbsp;Дом_быта_"Юбилейный"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__яхтклуб__#__pripyat1/yahtklub target=_blank>&nbsp;&nbsp;Припятский_яхтклуб&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="bltyc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__танцплощадка__#__pripyat0/tancploschadka target=_blank>&nbsp;&nbsp;Танцплощадка&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__телефоны__#__pripyat0/telefon target=_blank>&nbsp;&nbsp;Телефоны_автоматы&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Торговый_центр1__#__pripyat0/torgovyj_centr1 target=_blank>&nbsp;&nbsp;Торговый_центр_1&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Торговый_центр2__#__pripyat0/torgovyj_centr2 target=_blank>&nbsp;&nbsp;Торговый_центр_2&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Универмаг__#__pripyat0/univermag target=_blank>&nbsp;&nbsp;магазин_"Универмаг"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Фабрика_кухня__#__pripyat0/fabrika_kuhnya target=_blank>&nbsp;&nbsp;Фабрика_кухня&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Фекальная__#__pripyat0/feka target=_blank>&nbsp;&nbsp;Фекальная_станция&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__фигурки__#__pripyat0/figurka target=_blank>&nbsp;&nbsp;Фигурки&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__химчистка__#__pripyat0/himchistka target=_blank>&nbsp;&nbsp;Химчистка_прачечная&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Энергетик_1__#__pripyat0/energetik1 target=_blank>&nbsp;&nbsp;Дворец_культуры_"Энергетик"_1&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Энергетик_2__#__pripyat0/energetik2 target=_blank>&nbsp;&nbsp;Дворец_культуры_"Энергетик"_2&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__Юбилейный__#__pripyat0/jubilejnyj target=_blank>&nbsp;&nbsp;Дом_быта_"Юбилейный"&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__яхтклуб__#__pripyat0/yahtklub target=_blank>&nbsp;&nbsp;Припятский_яхтклуб&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="bluz" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__школа1__#__pripyat1/shkola1 target=_blank>&nbsp;&nbsp;Средняя школа №1&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__школа2__#__pripyat1/shkola2 target=_blank>&nbsp;&nbsp;Средняя школа №2&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__школа3__#__pripyat1/shkola3 target=_blank>&nbsp;&nbsp;Средняя школа №3&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__школа4__#__pripyat1/shkola4 target=_blank>&nbsp;&nbsp;Средняя школа №4&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__школа5__#__pripyat1/shkola5 target=_blank>&nbsp;&nbsp;Средняя школа №5&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__музшкола__#__pripyat1/muzshkola target=_blank>&nbsp;&nbsp;Музыкальная_школа&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="bluzc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__школа1__#__pripyat0/shkola1 target=_blank>&nbsp;&nbsp;Средняя школа №1&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__школа2__#__pripyat0/shkola2 target=_blank>&nbsp;&nbsp;Средняя школа №2&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__школа3__#__pripyat0/shkola3 target=_blank>&nbsp;&nbsp;Средняя школа №3&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__школа4__#__pripyat0/shkola4 target=_blank>&nbsp;&nbsp;Средняя школа №4&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__школа5__#__pripyat0/shkola5 target=_blank>&nbsp;&nbsp;Средняя школа №5&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__музшкола__#__pripyat0/muzshkola target=_blank>&nbsp;&nbsp;Музыкальная_школа&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blug" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__ул_Героев_Сталинграда_01_03__#__pripyat1/ul_geroev_01_03 target=_blank>&nbsp;&nbsp;Улица_Героев_Сталинграда_01_03&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Героев_Сталинграда_04_08__#__pripyat1/ul_geroev_04_08 target=_blank>&nbsp;&nbsp;Улица_Героев_Сталинграда_04_08&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Героев_Сталинграда_09_12__#__pripyat1/ul_geroev_09_12 target=_blank>&nbsp;&nbsp;Улица_Героев_Сталинграда_09_12&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Гидропроектовская__#__pripyat1/ul_gidroproektovskaya target=_blank>&nbsp;&nbsp;Улица_Гидропроектовская&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Дружбы_народов_01_09__#__pripyat1/ul_druzhby_narodov_01_09 target=_blank>&nbsp;&nbsp;Улица_Дружбы_народов_01_09&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Дружбы_народов_11_15__#__pripyat1/ul_druzhby_narodov_11_15 target=_blank>&nbsp;&nbsp;Улица_Дружбы_народов_11_15&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Заводская__#__pripyat1/ul_zavodskaya target=_blank>&nbsp;&nbsp;Улица_Заводская&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Курчатова_01_07а__#__pripyat1/ul_kurchatova_01_07а target=_blank>&nbsp;&nbsp;Улица_Курчатова_01_07а&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Курчатова_09_16__#__pripyat1/ul_kurchatova_09_16 target=_blank>&nbsp;&nbsp;Улица_Курчатова_09_16&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Курчатова_18_27__#__pripyat1/ul_kurchatova_18_27 target=_blank>&nbsp;&nbsp;Улица_Курчатова_18_27&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Курчатова_31_35__#__pripyat1/ul_kurchatova_31_35 target=_blank>&nbsp;&nbsp;Улица_Курчатова_31_35&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blugc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__ул_Героев_Сталинграда_01_03__#__pripyat0/ul_geroev_01_03 target=_blank>&nbsp;&nbsp;Улица_Героев_Сталинграда_01_03&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Героев_Сталинграда_04_08__#__pripyat0/ul_geroev_04_08 target=_blank>&nbsp;&nbsp;Улица_Героев_Сталинграда_04_08&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Героев_Сталинграда_09_12__#__pripyat0/ul_geroev_09_12 target=_blank>&nbsp;&nbsp;ул_Героев_Сталинграда_09_12&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Гидропроектовская__#__pripyat0/ul_gidroproektovskaya target=_blank>&nbsp;&nbsp;Улица_Гидропроектовская&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Дружбы_народов_01_09__#__pripyat0/ul_druzhby_narodov_01_09 target=_blank>&nbsp;&nbsp;Улица_Дружбы_народов_01_09&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Дружбы_народов_11_15__#__pripyat0/ul_druzhby_narodov_11_15 target=_blank>&nbsp;&nbsp;Улица_Дружбы_народов_11_15&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Заводская__#__pripyat0/ul_zavodskaya target=_blank>&nbsp;&nbsp;Улица_Заводская&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Курчатова_01_07а__#__pripyat0/ul_kurchatova_01_07а target=_blank>&nbsp;&nbsp;Улица_Курчатова_01_07а&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Курчатова_09_16__#__pripyat0/ul_kurchatova_09_16 target=_blank>&nbsp;&nbsp;Улица_Курчатова_09_16&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Курчатова_18_27__#__pripyat0/ul_kurchatova_18_27 target=_blank>&nbsp;&nbsp;Улица_Курчатова_18_27&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Курчатова_31_35__#__pripyat0/ul_kurchatova_31_35 target=_blank>&nbsp;&nbsp;Улица_Курчатова_31_35&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blul" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__ул_Лазарева__#__pripyat1/ul_lazareva target=_blank>&nbsp;&nbsp;Улица_сержанта_Лазарева&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Ленина_01_07а__#__pripyat1/ul_lenina_01_07a target=_blank>&nbsp;&nbsp;Проспект_Ленина_01_07а&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Ленина_08_14__#__pripyat1/ul_lenina_08_14 target=_blank>&nbsp;&nbsp;Проспект_Ленина_08_14&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Ленина_15_22__#__pripyat1/ul_lenina_15_22 target=_blank>&nbsp;&nbsp;Проспект_Ленина_15_22&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Ленина_23_32__#__pripyat1/ul_lenina_23_32 target=_blank>&nbsp;&nbsp;Проспект_Ленина_23_32&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_01_06__#__pripyat1/ul_lesi_01_06 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_01_06&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_08_26__#__pripyat1/ul_lesi_08_26 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_08_26&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_28_42__#__pripyat1/ul_lesi_28_42 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_28_42&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_44_52__#__pripyat1/ul_lesi_44_52 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_44_52&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_54_58__#__pripyat1/ul_lesi_54_58 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_54_58&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blulc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__ул_Лазарева__#__pripyat0/ul_lazareva target=_blank>&nbsp;&nbsp;Улица_сержанта_Лазарева&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Ленина_01_07а__#__pripyat0/ul_lenina_01_07a target=_blank>&nbsp;&nbsp;Проспект_Ленина_01_07а&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Ленина_08_14__#__pripyat0/ul_lenina_08_14 target=_blank>&nbsp;&nbsp;Проспект_Ленина_08_14&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Ленина_15_22__#__pripyat0/ul_lenina_15_22 target=_blank>&nbsp;&nbsp;Проспект_Ленина_15_22&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Ленина_23_32__#__pripyat0/ul_lenina_23_32 target=_blank>&nbsp;&nbsp;Проспект_Ленина_23_32&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_01_06__#__pripyat0/ul_lesi_01_06 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_01_06&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_08_26__#__pripyat0/ul_lesi_08_26 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_08_26&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_28_42__#__pripyat0/ul_lesi_28_42 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_28_42&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_44_52__#__pripyat0/ul_lesi_44_52 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_44_52&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Леси_54_58__#__pripyat0/ul_lesi_54_58 target=_blank>&nbsp;&nbsp;Улица_Леси_Украинки_54_58&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blun" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__ул_Набережная__#__pripyat1/ul_naberezhnaya target=_blank>&nbsp;&nbsp;Улица_Набережная&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Огнева__#__pripyat1/ul_ogneva target=_blank>&nbsp;&nbsp;Улица_Огнева&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Спортивная_01_10__#__pripyat1/ul_sportivnaya_01_10 target=_blank>&nbsp;&nbsp;Улица_Спортивная_01_10&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Спортивная_12_19__#__pripyat1/ul_sportivnaya_12_19 target=_blank>&nbsp;&nbsp;Улица_Спортивная_12_19&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Строителей_01_07__#__pripyat1/ul_stroitelej_01_07 target=_blank>&nbsp;&nbsp;Проспект_Строителей_01_07&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Строителей_08_21__#__pripyat1/ul_stroitelej_08_21 target=_blank>&nbsp;&nbsp;Проспект_Строителей_08_21&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Строителей_22_30__#__pripyat1/ul_stroitelej_22_30 target=_blank>&nbsp;&nbsp;Проспект_Строителей_22_30&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Строителей_32_40__#__pripyat1/ul_stroitelej_32_40 target=_blank>&nbsp;&nbsp;Проспект_Строителей_32_40&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Энтузиастов__#__pripyat1/ul_entuziastov target=_blank>&nbsp;&nbsp;Улица_Энтузиастов&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <div id="blunc" style="position:absolute; top:90px; left:410px; display: none">
+    <a class="bm" href=show.htm?__Припять__ул_Набережная__#__pripyat0/ul_naberezhnaya target=_blank>&nbsp;&nbsp;Улица_Набережная&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Огнева__#__pripyat0/ul_ogneva target=_blank>&nbsp;&nbsp;Улица_Огнева&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Спортивная_01_10__#__pripyat0/ul_sportivnaya_01_10 target=_blank>&nbsp;&nbsp;Улица_Спортивная_01_10&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Спортивная_12_19__#__pripyat0/ul_sportivnaya_12_19 target=_blank>&nbsp;&nbsp;Улица_Спортивная_12_19&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Строителей_01_07__#__pripyat0/ul_stroitelej_01_07 target=_blank>&nbsp;&nbsp;Проспект_Строителей_01_07&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Строителей_08_21__#__pripyat0/ul_stroitelej_08_21 target=_blank>&nbsp;&nbsp;Проспект_Строителей_08_21&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Строителей_22_30__#__pripyat0/ul_stroitelej_22_30 target=_blank>&nbsp;&nbsp;Проспект_Строителей_22_30&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__пр_Строителей_32_40__#__pripyat0/ul_stroitelej_32_40 target=_blank>&nbsp;&nbsp;Проспект_Строителей_32_40&nbsp;&nbsp;</a><div class="sp1"> </div>
+    <a class="bm" href=show.htm?__Припять__ул_Энтузиастов__#__pripyat0/ul_entuziastov target=_blank>&nbsp;&nbsp;Улица_Энтузиастов&nbsp;&nbsp;</a><div class="sp1"> </div>
+    </div>
+    <p id="serv1" style="font-size:300%; display: none">serv1</p>
+    <span id="blbl" style="display: none"> </span> <span id="blblc" style="display: none"> </span>
+  </body>
+</html>
